@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .header {
+            height: 70px;
+            background-color: #ffffff ;
+        }
+        .header a {
+            color: #7a7a7a;
+        }
+        .header-c {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .header-c .logo {
+            float: left;
+            height: 100%;
+            width: 160px;
+            background: url('img/logo.png') no-repeat center;
+        }
+        .header .nav {
+            float: right;
+            height: 100%;
+            background-color: #ffffff;
+        }
+        .nav .nav-item{
+            float: left;
+            width: 90px;
+            height: 100%;
+            text-align: center;
+            line-height: 70px;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+        .nav a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            width: 100%;
+            height: 1250px;
+            margin: 0 auto;
+        }
+        .commit-title{
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            margin: 100px auto 60px;
+        }
+        .commit-title .c-name{
+            font-size: 26px;
+            color: #444444;
+        }
+        .commit-title .e-name{
+            font-size: 16px;
+            color: #c1c1c1;
+        }
+        .activity{
+            width: 100%;
+            height:  700px;
+            margin: 0 auto;
+        }
+        .activity-c{
+            width: 100%;
+            height: 700px;
+            margin: 0 auto;
+        }
+        .swapper{
+            background-color: #444444;
+            height: 200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .details-text{
+            height: 200px;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .details-text .date{
+            margin-top: 50px;
+            width: 200px;
+            height: 100px;
+            float: left;
+            text-align: right;
+            color: #929292;
+        }
+        .date h3{
+            font-size: 60px;
+        }
+        .date p{
+            font-size: 16px;
+        }
+        .swapper .details-text .text{
+            margin-top: 50px;
+            float: right;
+            width: 480px;
+            height: 100px;
+        }
+        .slide{
+            background-color: #444444;
+            height: 200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .details-text{
+            height: 200px;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .details-text .date{
+            margin-top: 50px;
+            width: 200px;
+            height: 100px;
+            float: left;
+            text-align: right;
+            color: #929292;
+        }
+        .date h3{
+            font-size: 60px;
+        }
+        .date p{
+            font-size: 16px;
+        }
+        .slide .details-text .text{
+            margin-top: 50px;
+            float: right;
+            width: 480px;
+            height: 100px;
+        }
+        .slide-c{
+            background-color: #444444;
+            height: 200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .details-text{
+            height: 200px;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .details-text .date{
+            margin-top: 50px;
+            width: 200px;
+            height: 100px;
+            float: left;
+            text-align: right;
+            color: #929292;
+        }
+        .date h3{
+            font-size: 60px;
+        }
+        .date p{
+            font-size: 16px;
+        }
+        .slide-c .details-text .text{
+            margin-top: 50px;
+            float: right;
+            width: 480px;
+            height: 100px;
+        }
+        .swiper{
+            position: relative;
+            width: 100%;
+            height: 30px;
+            margin: 0 auto;
+        }
+        .swiper .appointment1{
+            position: absolute;
+            left: 700px;
+            width: 30px;
+            height: 20px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #6d6d6d;
+            border: 1px solid gray;
+        }
+        .swiper .appointment2{
+            position: absolute;
+            left: 750px;
+            width: 30px;
+            height: 20px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #6d6d6d;
+            border: 1px solid gray;
+        }
+        .pp {
+            height: 160px;
+            width: 100%;
+            background-color: #f7f5f5;
+        }
+        .pp-c {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .pp .pp-c1{
+            padding-top: 20px;
+            width: 400px;
+            height: 100px;
+            line-height: 50px;
+        }
+        .pp .join {
+            float: right;
+        }
+        .pp .join-item {
+            float: left;
+            font-size: 15px;
+            color: #323232;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="header-c">
+            <a href="#" class="logo" ></a>
+            <ul class="nav" >
+            <li class="nav-item" >
+            <a href="婚纱首页.html">首页</a>
+            </li>
+            <li class="nav-item" >
+            <a href="婚纱礼服.html">婚纱礼服</a>
+            </li>
+            <li class="nav-item" >
+            <a href="珠宝配饰.html">珠宝配饰</a>
+            </li>
+            <li class="nav-item" >
+            <a href="最新活动.html">最新活动</a>
+            </li>
+            <li class="nav-item" >
+            <a href="关于我们.html">关于我们</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="banner" >
+            <img src="img/活动banner2.png" alt="">
+        </div>
+        <div class="commit-title" >
+            <h3 class="c-name" >最新活动</h3>
+            <h3 class="e-name" >Latest Activities</h3>
+        </div>
+        <div class="activity" >
+            <div class="activity-c" >
+                <div class="swapper" >
+                    <div class="details-text" >
+                        <div class="date" >
+                            <h3>06-18</h3>
+                            <p>2018</p>
+                        </div>
+                        <div class="text" >
+                            <h3>VERONICA服饰与美容独家专访</h3>
+                            <p>《THE LITTLE BLACK JACKET》摄影展去年在巴黎、东京、纽约、伦敦、米兰等国际都会展出，反响非常热烈。今年，摄影展登录上海和北京两大城市舞台，增加多位艺文界...</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="slide" >
+                    <div class="details-text" >
+                        <div class="date" >
+                            <h3>02-26</h3>
+                            <p>2018</p>
+                        </div>
+                        <div class="text" >
+                            <h3>Her Style 2017/18春夏米兰婚纱礼服流行发布</h3>
+                            <p>Rick Owens 2011/12秋冬巴黎男装流行发布 纵观这场秀的主题，你可以想尽各种荒诞的元素，都不足以来描述这场“怪诞”的晚餐。Thom大叔将他一向怪诞风趣的服装风格...</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="slide-c" >
+                    <div class="details-text" >
+                        <div class="date" >
+                            <h3>12-24</h3>
+                            <p>2018</p>
+                        </div>
+                        <div class="text" >
+                            <h3>圣诞高级定制发布会</h3>
+                            <p>摄影展在北京酒仙桥路798艺术区旁的751D•PARK的第一车间盛大揭幕。开幕红毯名流云集，Vogue第一时间带来现场盛况...</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="swiper" >
+                <div class="appointment1" >1</div>
+                <div class="appointment2" >2</div>
+            </div>
+        </div>
+    </div>
+    <div class="pp" >
+        <div class="pp-c" >
+            <div class="pp-c1"  >
+            <p>网站备案号：豫ICP备110121210号</p>
+            <p>增值电信业务经营许可证号：豫B2-20100033</p>
+            </div>
+            <div class="join" >
+                <div class="join-item copyright"  >@ 2018 VERONICA</div>
+                <a href="" class="join-item chat " >联系我们</a>
+                <a href="" class="join-item join-us" >加入我们</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

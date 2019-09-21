@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        .header {
+            height: 70px;
+            background-color: #ffffff ;
+        }
+        .header a {
+            color: #7a7a7a;
+        }
+        .header-c {
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .header-c .logo {
+            float: left;
+            height: 100%;
+            width: 160px;
+            background: url('img/logo.png') no-repeat center;
+        }
+        .header .nav {
+            float: right;
+            height: 100%;
+            background-color: #ffffff;
+        }
+        .nav .nav-item{
+            float: left;
+            width: 90px;
+            height: 100%;
+            text-align: center;
+            line-height: 70px;
+            font-size: 16px;
+            margin-left: 30px;
+        }
+        .nav a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .banner{
+            position: relative;
+            width: 100%;
+            height: 700px;
+            background: url('img/banner1.png') no-repeat center;
+            background-size: cover;
+        }
+        .banner .dot {
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            margin-left: -50px;
+            width: 100px;
+            height: 10px;
+        }
+        .dot .dot-item {
+            float: left;
+            margin: 0 10px;
+            width: 6px;
+            height: 6px;
+            background-color: #cccccc;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            background-clip: content-box;
+
+        }
+        .dot .dot-item:hover {
+            border-color: #333;
+        }
+        .banner .arr{
+            position: absolute;
+            left: 250px;
+            top: 316px;
+            width: 50px;
+            height: 79px;
+        }
+        .banner .arr .arr-l {
+            background: url('img/arr.png') no-repeat center;
+        }
+        .wed {
+            width: 100%;
+            height: 831px;
+        }
+        .wed .wedd {
+            width: 1500px;
+            height: 728px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 100px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h4 {
+            color: #cccccc;
+        }
+        .wed .new {
+            width: 604px;
+            height: 128px;
+            margin: 0 auto;
+        }
+        .news {
+            text-align: center;
+            line-height: 128px;
+            color: gray;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .wed .wedd a:hover {
+            color: #beb180;
+        }
+        .wed .new-item {
+            position: relative;
+            width: 1200px;
+            height: 526px;
+            margin: 0 auto;
+        }
+        .wed .pro-img {
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .kk{
+            color: black;
+        }
+        .pro-list .kk {
+            position: absolute;
+            width: 151px;
+            height: 45px;
+            bottom: 50px;
+            left: 520px;
+            font-size: 20px;
+            border: 1px solid  #beb180;
+        }
+        .jew {
+             width: 100%;
+             height: 556px;
+             background-color: #f9f9f9;
+        }
+        .jew-c {
+            position: relative;
+             width: 1200px;
+             height: 556px;
+             margin: 0 auto;
+        }
+        .jew .jew-c {
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+        .gg {
+            width: 1200px;
+            height: 345px;
+            margin: 0 auto;
+        }
+        .jew .gg-item {
+            height: 400px;
+            width: 1200px;
+        }
+        .jew .gg-img {
+            float: left;
+            margin-left: 10px;
+            margin-right: 8px;
+            margin-top: 200px;
+        }
+        .jew .kk {
+            position: absolute;
+            width: 151px;
+            height: 45px;
+            bottom: 50px;
+            left: 500px;
+            font-size: 20px;
+            border: 1px solid  #beb180;
+        }
+        .acv {
+             width: 100%;
+             height: 876px;
+        }
+        .acv-c {
+             width: 100%;
+             height: 776px;
+             text-align: center;
+             margin-top:100px;
+        }
+        .acv .yy{
+            height: 100%;
+            width: 100%;
+            margin-top: 60px;            
+        }
+        .yy h4 {
+            color: black;
+        }
+        .yy .ncv{
+            position: relative;
+            width: 1200px;
+            height: 500px;
+            margin-top: -350px;
+            margin-left: 330px;
+        }
+        .yy .dd a {
+            color: #bbbaba;
+        }
+        .yy .kl a {
+            position: absolute;
+            left: 530px;
+            bottom: 40px;
+            width: 151px;
+            height: 45px;
+            font-size: 20px;
+            margin: 0 auto;
+            text-align: center;
+            color: #bbbaba;
+            border: 1px solid  gray;
+        }
+        .yy .ncv-c1{
+            width: 300px;
+            height: 335px;
+            margin-top: 169px;
+            line-height: 45px;
+            background-color: white;
+        }
+        .yy .ncv .ncv-c2{
+            width: 300px;
+            height: 335px;
+            margin-left: 600px;
+            margin-top: -350px;
+            line-height: 45px;
+        }
+        .yy .ncv .ncv-c3{
+            width: 300px;
+            height: 335px;
+            line-height: 45px;
+            margin-left: 890px;
+            margin-top: -335px;
+        }
+        .ncv img{
+            width: 300px;
+            height: 335px;
+            margin-top:-630px;
+            margin-left: -300px;
+        }
+        .des {
+            height: 664px;
+            width: 100%;
+            background-color: #4d4d4d;
+        }
+        .des-c {
+            width: 1400px;
+            height: 664px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .des-c h2 {
+            color: #cccccc;
+            padding-top: 50px;
+        }
+        .des-c .des-c1{
+            margin-top: 100px;
+            width: 300px;
+            height: 453px;
+        }
+        .des-c .des-c2{
+            margin-top: -450px;
+            margin-left: 560px;
+            width: 300px;
+            height: 453px;
+        }
+        .des-c .des-c3{
+            margin-left: 1150px;
+            margin-top: -450px;
+            width: 300px;
+            height: 453px;
+        }
+        .des-c1 img{
+            margin-top: 5px;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .des-c2 img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .des-c3 img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .des-c .des-c2{
+
+            width: 277px;
+            height: 453px;
+        }
+        .des-c .des-c3{
+            width: 277px;
+            height: 453px;
+        }
+        .des .des-c .ds {
+            text-align: center;
+            width: 151px;
+            font-size: 20px;
+            margin: 0 auto;
+            margin-top: 15px;
+            border-bottom: 1px solid gray;
+        }
+        .des a {
+            color: #bbbaba;
+        }
+        .pp {
+            height: 160px;
+            width: 100%;
+        }
+        .pp-c {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .pp .pp-c1{
+            padding-top: 20px;
+            width: 400px;
+            height: 100px;
+            line-height: 50px;
+        }
+        .pp .join {
+            float: right;
+        }
+        .pp .join-item {
+            float: left;
+            font-size: 15px;
+            color: #323232;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" >
+        <div class="header-c">
+            <a href="#" class="logo" ></a>
+            <ul class="nav" >
+                <li class="nav-item" >
+                    <a href="婚纱首页.html">首页</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="婚纱礼服.html">婚纱礼服</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="珠宝配饰.html">珠宝配饰</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="最新活动.html">最新活动</a>
+                </li>
+                <li class="nav-item" >
+                    <a href="关于我们.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+            <div>
+                <ul class="dot" >
+                    <li class="dot-item"></li>
+                    <li class="dot-item"></li>
+                </ul>
+            </div>
+            <a href="#" class="arr arr-l"></a>
+            <a href="#" class="arr arr-r"></a>
+    </div>
+    <div class="wed" >
+        <div class="wedd">
+            <h2>婚纱礼服</h2>
+            <h4>Wedding Dress</h4>
+            <div class="new" >
+                <a href="#" class="news" >新品/NEW</a>
+                <span class="dot" ></span>
+                <a href="#" class="news" >2018春夏</a>
+                <a href="#" class="news" >2018秋冬</a>
+                <a href="#" class="news" >专属定制</a>
+            </div>
+            <div class="new-item" >
+                <div class="pro-list" >
+                    <div class="pro-img" >
+                        <img src="img/img-1.png" alt="">
+                    </div>
+                    <div class="pro-img" >
+                        <img src="img/img-2.png" alt="">
+                    </div>
+                    <div class="pro-img" >
+                        <img src="img/img-3.png" alt="">
+                    </div>
+                    <div class="pro-img" >
+                        <img src="img/img-4.png" alt="">
+                    </div>
+                    <div class="kk"><a href="#" class="more" >MORE</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jew" >
+        <div class="jew-c" >
+            <h2>珠宝配饰</h2>
+            <h4>Jewelry Show</h4>
+            <div class="gg" >
+                <div class="gg-item" >
+                    <div class="gg-img" >
+                        <img src="img/jew-1.png" alt="">
+                    </div>
+                    <div class="gg-img" >
+                        <img src="img/jew-2.png" alt="">
+                    </div>
+                    <div class="gg-img" >
+                        <img src="img/jew-3.png" alt="">
+                    </div>
+                    <div class="gg-img" >
+                         <img src="img/jew-4.png" alt="">
+                    </div>
+                    <div class="kk"><a href="#" class="more" >MORE</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="acv" >
+        <div class="acv-c" >
+            <h2>最新活动</h2>
+            <h4>Latest Activities</h4>
+            <div class="yy" >
+                <img src="img/acv-1.png" alt="">
+                <div class="ncv"  >
+                    <div class="ncv-c1" >
+                        <h2>06-18 2018</h2>
+                        <h4>新品发布会</h4>
+                        <p>伴随着T台两侧色彩趋势报告的发布，</p>
+                        <p>VERONICA2017婚纱新品发布会正...</p>
+                        <div class="dd"><a href="#" class="more" >MORE></a></div>
+                    </div>
+                        <img src="img/acv-3.png" alt="">
+                    <div class="ncv-c2" >
+                        <h2>12-24 2017</h2>
+                        <h4>圣诞高级定制发布会</h4>
+                        <p>《金字塔铭文》中有这样的话：“天空</p>
+                        <p>把自己的光芒伸向你，以便你可以去到...</p>
+                        <div class="dd"><a href="#" class="more" >MORE></a></div>
+                    </div>
+                    <div class="ncv-c3" >
+                        <h2>06-21 2017</h2>
+                        <h4>夏季新品发布会</h4>
+                        <p>“我非常欣赏并且热爱美国，因为</p>
+                        <p>这里是我获得成功的地方。在许...</p>
+                        <div class="dd"><a href="#" class="more" >MORE></a></div>
+                    </div>
+                    <div class="kl"><a href="#" class="more" >MORE</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="des" >
+        <div class="des-c" >
+            <h2>设计师</h2>
+            <h4>Designers</h4>
+            <div class="des-c1" >
+                <img src="img/des-1.png" alt="">
+                <h2>Jason . W</h2>
+                <h4>首席设计师</h4>
+                <p>法国时装设计师，VERONICA品牌创始人之一，设计总监，2016福布斯最具影响力的设计师...</p>
+                <div class="ds"><a href="#" class="more" >MORE></a></div>
+            </div>
+            <div class="des-c2" >
+                <img src="img/des-2.png" alt="">
+                <h2>颜澈</h2>
+                <h4>资深设计师</h4>
+                <p>设计界的“设计鬼才”从题材到表现方式都引起了极大的福布斯中国最具潜力，每一个产品都是我们精...</p>
+                <div class="ds"><a href="#" class="more" >MORE></a></div>
+            </div>
+            <div class="des-c3" >
+                <img src="img/des-3.png" alt="">
+                <h2>Katherine .J</h2>
+                <h4>运营总监</h4>
+                <p>The world's leading electronic desgin journal NEWWEBPICK recommended the designer...</p>
+                <div class="ds"><a href="#" class="more" >MORE></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="pp" >
+        <div class="pp-c" >
+            <div class="pp-c1"  >
+            <p>网站备案号：豫ICP备110121210号</p>
+            <p>增值电信业务经营许可证号：豫B2-20100033</p>
+            </div>
+            <div class="join" >
+                <div class="join-item copyright"  >@ 2018 VERONICA</div>
+                <a href="" class="join-item chat " >联系我们</a>
+                <a href="" class="join-item join-us" >加入我们</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
